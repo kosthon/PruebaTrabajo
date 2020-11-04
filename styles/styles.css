@@ -1,0 +1,186 @@
+/*
+    1. Pociosionamiento
+    2. Modelo de caja
+    3. Tipografia
+    4. Temas visuales (shadow-box, border-radius)
+    5. Otros
+*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+}
+body{
+    background-image: url(../assets/images/Background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 120vh;
+}
+
+/* Inicios de estilos header */
+header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 170px;
+}
+header .header-logo{
+    width: 140px;
+    height: 140px;
+    margin-left: 170px;
+    margin-top: 30px;
+}
+header nav .nav-rigth-section{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    font-size: 1.8rem;
+    line-height: 3rem;
+}
+header nav .nav-rigth-section a{
+    text-decoration: none;
+    color: white;
+    line-height: 2.4rem;
+}
+header .header-nav-container{
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    margin-right: 100px;
+    margin-top: 50px;
+}
+header .header-nav-container--lenguaje{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: flex-end;
+    text-align: center;
+    font-size: 1.8rem;
+    width: 110px;
+    color: white;
+    border: 5px solid #9246A2;
+    border-radius: 16px;
+    margin-top: 8px;
+}
+.separator-lenguaje{
+    width: 1px;
+    background-color: white;
+    margin-left: 2px;
+    margin-right: 2px;
+
+}
+.container-lenguaje{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+header .header-nav-container--lenguaje img{
+    width: 40px;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+.last-item .button-ingresar{
+    font-size: 1.8rem;
+    width: 110px;
+    height: 36px;
+    border: 5px solid #9246A2;
+    border-radius: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    color: white;
+}
+.header-nav-container--lenguaje p{
+    margin-bottom: 5px;
+}
+/* Fin estilos header*/
+
+/*Inicio estilos main*/
+.main-landing-container .social-list-container li{
+    list-style: none;
+}
+.main-social-container .social-list-container a img{
+    width: 54px;
+    height: 54px;
+}
+main .main-landing-container{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 70px;
+    margin-right: 130px;
+    margin-top: 40px;
+}
+.main-title-container{
+    display: flex;
+    flex-direction: column;
+}
+main .main-landing-container .main-title-container{
+    text-align: right;
+}
+.main-title-container .separator-main{
+    align-self:flex-end;
+    width: 250px;
+    height: 2.5px;
+    background-color: white;
+}
+.main-title-container--title{
+    font-size: 5.2rem;
+    color: white;
+}
+.main-title-container p{
+    margin-top: 10px;
+    font-size: 1.8rem;
+    font-weight: 2rem;
+    color: white;
+}
+.social-list-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 250px;
+}
+/* Fin estilos landing */
+
+/* inicio estilos de banderas */
+.main-flags-container {
+    display: flex;
+    flex-direction: row;
+    background-color: #A360BF;
+    width: 100%;
+    margin-top: 230px;
+}
+.main-flags-container .flags-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    list-style: none;
+}
+.main-flags-container .flags-container li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.main-flags-container .flags-container li img{
+    width: 70px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.main-flags-container .flags-container li h2, .main-flags-container .flags-container h2{
+    font-size: 2.5rem;
+    color: white;
+}
