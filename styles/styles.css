@@ -1,10 +1,4 @@
-/*
-    1. Pociosionamiento
-    2. Modelo de caja
-    3. Tipografia
-    4. Temas visuales (shadow-box, border-radius)
-    5. Otros
-*/
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -48,6 +42,9 @@ header nav .nav-rigth-section a{
     text-decoration: none;
     color: white;
     line-height: 2.4rem;
+}
+header nav .nav-rigth-section a:hover{
+    color: #9246A2;
 }
 header .header-nav-container{
     display: flex;
@@ -97,6 +94,9 @@ header .header-nav-container--lenguaje img{
     cursor: pointer;
     outline: none;
     color: white;
+}
+.last-item .button-ingresar:hover{
+    background-color:  #9246A2;
 }
 .header-nav-container--lenguaje p{
     margin-bottom: 5px;
@@ -204,9 +204,8 @@ main .main-landing-container .main-title-container{
     align-items: center;
     background-image: url(../assets/images/Decorado\ pagina\ home0.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0 0;
-    height: 100%;
+    background-size: auto 735px;
+    background-position: 100%  100%;
 }
 .main-monedasyenvio-container .main-monedasyenvio-container--title{
     font-size: 3rem;
@@ -301,9 +300,10 @@ main .main-landing-container .main-title-container{
 .main-servicios-container{
     background-image: url(../assets/images/decorado\ contactos0.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position:  0 -15%;
+    background-size: auto 745px;
+    background-position:  -150px 100%;
     text-align: center;
+    padding-top: 60px;
     padding-bottom: 60px;
 }
 .main-servicios-container p{
@@ -312,8 +312,7 @@ main .main-landing-container .main-title-container{
 }
 .main-servicios--title{
     font-size: 3rem;
-    color: #D95204;
-    margin-top: 6vh;
+    color: #6e655f;
     margin-bottom: 10px;
 }
 .main-servicios-container .cards-servicios-container{
@@ -350,6 +349,9 @@ main .main-landing-container .main-title-container{
     height: 45px;
     background-color: #893CCC;
     border-radius: 20px;
+}
+.boton-servicios:hover{
+    background-color: #9b68c7;
 }
 .boton-servicios a{
     display: block;
@@ -397,6 +399,9 @@ main .main-landing-container .main-title-container{
     height: 45px;
     background-color: #893CCC;
     border-radius: 20px;
+}
+.boton-pierdas:hover{
+    background-color: #9b68c7;
 }
 .boton-pierdas a{
     display: block;;
@@ -460,4 +465,97 @@ main .main-landing-container .main-title-container{
     font-size: 1.5rem;
     color:#969390;
     line-height: 2rem;
+}
+/*fin estilos blog*/
+
+/* Inicio estilos Contactanos */
+.main-contactanos-container{
+    background-image: url(../assets/images/contactos\ 0.png);
+    background-repeat: no-repeat;
+    background-size:  contain;
+    background-position:  100% 100%;
+}
+.contactanos-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 60%;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.contactanos-inputs{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+.contactanos-text{
+    width: 60%;
+}
+.contactanos-text h3{
+    font-size: 3rem;
+    color:  #D95204;
+    margin-bottom: 10px;
+}
+.contactanos-text p{
+    font-size: 1.5rem;
+    color:#969390;
+    line-height: 2rem;
+}
+.contactanos-text .thanks{
+    font-size: 2rem;
+    color: #D95204;
+    margin-top: 10px;
+}
+.contactanos-container .contactanos-inputs form{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+.contactanos-container .contactanos-inputs form input, .contactanos-container .contactanos-inputs form textarea{
+    margin-bottom: 10px;
+    border: 1px solid #969390;
+    border-radius: 0;
+}
+.contactanos-container .contactanos-inputs form input[type=text], input[type=email]{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.3rem;
+    padding-left: 10px;
+    height: 35px;
+    outline: none;
+}
+
+.contactanos-container .contactanos-inputs form textarea{
+    resize: none;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.3rem;
+    outline: none;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.contactanos-inputs form input[type=submit]{
+    border-radius: 20px;
+    height: 30px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #893CCC;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+.contactanos-inputs form input[type=submit]:hover{
+    background-color: #9b68c7;
+}
+/* Fin estilos contactanos /*
+
+/*footer*/
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #893CCC;
+    height: 50px;
+    font-size: 2rem;
+    color: white;
 }
